@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="16"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/mainFeeds"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="一覧"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/mainSuggest"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="おすすめ"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/mainProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="プロフィール"
+            android:textColor="@color/gray"
+            android:textStyle="bold" />
+
+        <!--            <Button-->
+        <!--                android:id="@+id/btnLogout"-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:layout_gravity="bottom"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:background="@color/white"-->
+        <!--                android:onClick="onLogout"-->
+        <!--                android:text="ログアウト"-->
+        <!--                android:textColor="@color/gray"-->
+        <!--                android:textStyle="bold" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="2" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="7">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="総合価格(円)"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/value"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:textColor="@color/gray" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="アイテムリスト"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/item1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:hint="ユニクロ"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textColor="@color/gray"
+                android:paddingStart="10dp"
+                tools:ignore="RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/item2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:hint="アウター"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textColor="@color/gray"
+                android:paddingStart="10dp"
+                tools:ignore="RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/item3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:hint="マフラー"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textColor="@color/gray"
+                android:paddingStart="10dp"
+                tools:ignore="RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/item4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textColor="@color/gray"
+                android:paddingStart="10dp"
+                tools:ignore="RtlSymmetry" />
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/item5"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="0dp"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:background="@color/white"-->
+            <!--                    android:textColor="@color/gray"-->
+            <!--                    android:paddingLeft="10dp"-->
+            <!--                    android:inputType="text" />-->
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:weightSum="8">
+
+        <TextView
+            android:id="@+id/tvTest"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="カラフルさ"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            tools:ignore="NestedWeights" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="価格"
+                android:textColor="@color/gray" />
+
+            <ImageView
+                android:id="@+id/mainPentagon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_margin="10dp"
+                android:layout_weight="4" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="季節感"
+                android:textColor="@color/gray" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="トレンド"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="フォーマル"
+                android:textColor="@color/gray" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="カメラ"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/btnGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="ファイル"
+            android:textColor="@color/gray"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnEval"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="評価"
+            android:textColor="@color/gray"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="アップロード"
+            android:textColor="@color/gray"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

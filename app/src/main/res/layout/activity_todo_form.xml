@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f9c1"
+    android:orientation="vertical"
+    tools:context=".TodoForm">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#77bb41"
+            android:textStyle="bold"
+            android:text="タスク作成" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#bae3a0"
+            android:textStyle="bold"
+            android:text="モンスター" />
+
+        <Button
+            android:id="@+id/button17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#bae3a0"
+            android:textStyle="bold"
+            android:text="一覧" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f8f9c1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:text="ToDo"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/tvTitle"
+            android:layout_width="299dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/maru"
+            android:ems="10"
+            android:padding="10dp"
+            android:hint="Title"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/tvExplanation"
+            android:layout_width="299dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/maru"
+            android:ems="10"
+            android:padding="10dp"
+            android:gravity="start|top"
+            android:hint="Explanation"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/tvLevel"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/maru"
+            android:ems="10"
+            android:padding="7dp"
+            android:gravity="center"
+            android:hint="Level"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/radio_phy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="運動"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radio_intel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="学習"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radio_life"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="生活"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radio_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="その他"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/desi"
+            android:onClick="onCreateTask"
+            android:text="作成" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

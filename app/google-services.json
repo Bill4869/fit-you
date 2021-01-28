@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "527927050667",
+    "firebase_url": "https://tohackmeapp.firebaseio.com",
+    "project_id": "tohackmeapp",
+    "storage_bucket": "tohackmeapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:527927050667:android:86472877c7d1210d9892ee",
+        "android_client_info": {
+          "package_name": "com.example.tohackmeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "527927050667-vrpknjcu33q06qbtrvcumi61g2da8uia.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tohackmeapp",
+            "certificate_hash": "5c6db2d0850fa2d6dd3526ec406b8c796d52a243"
+          }
+        },
+        {
+          "client_id": "527927050667-k7jinj8lrjn37ktnduqnf8b26mq5of1o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTz6WnYaYAtWq7r57_O1dJU2ztx7ZFQAY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "527927050667-k7jinj8lrjn37ktnduqnf8b26mq5of1o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Feeds">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/feedsSuggest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:text="おすすめ" />
+
+        <Button
+            android:id="@+id/feedsEval"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:text="評価" />
+
+
+        <Button
+            android:id="@+id/feedsProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:text="プロフィール" />
+
+<!--        <Button-->
+<!--            android:id="@+id/feedsLogout"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@color/white"-->
+<!--            android:textColor="@color/gray"-->
+<!--            android:textStyle="bold"-->
+<!--            android:text="ログアウト" />-->
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/feedsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@color/white"-->
+<!--        >-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/headerBar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <View-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                />-->
+<!--            -->
+
+<!--        </LinearLayout>-->
+<!--        -->
+<!--    </RelativeLayout>-->
+
+</LinearLayout>
