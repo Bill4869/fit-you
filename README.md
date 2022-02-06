@@ -5,6 +5,8 @@
 
 **Theme:** enjoy fashion during the outbreak of COVID-19
 
+We developed an application to evaluate fashion using AI and recommend other users' outfits based on face similarity. 
+
 This project's functions include:
 1. Evaluation
     - Season compatibility (季節感)
